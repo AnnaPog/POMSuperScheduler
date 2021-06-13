@@ -34,4 +34,17 @@ public class LoginTest extends ConfigBase {
 
         Assert.assertTrue(isLogged);
     }
+
+    @Test
+    public void negativeLogin(){
+        new SplashScreen(driver)
+                .checkVetsion("0.0.3")
+                .complitLogin(Credentials.builder()
+                        .email("john@gmail.com")
+                        .password("Jj123456$")
+                        .build());
+                   // driver.switchTo().alert().accept();
+
+
+    }
 }

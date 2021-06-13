@@ -33,6 +33,15 @@ public class LoginScreen extends BaseScreen{
         return new WizardScreen(driver);
     }
 
+    public LoginScreen complitNeg(Credentials credentials){
+        //login
+        type(emailEditText, credentials.getEmail());
+        type(passwordEditText, credentials.getPassword());
+        hideKeyboard();
+        loginButton.click();
+        return this;
+    }
+
     public WizardScreen complitLogin(Credentials credentials){
         //login
         type(emailEditText, credentials.getEmail());
