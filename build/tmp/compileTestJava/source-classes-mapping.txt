@@ -1,0 +1,8 @@
+testsSceduler/LoginTest.java
+ testsSceduler.LoginTest
+testsSceduler/LaunchTest.java
+ testsSceduler.LaunchTest
+testsSceduler/EventTest.java
+ testsSceduler.EventTest
+testsAdvanced/SwipeTests.java
+ testsAdvanced.SwipeTests

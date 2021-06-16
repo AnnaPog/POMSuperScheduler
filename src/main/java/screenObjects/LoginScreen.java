@@ -16,6 +16,8 @@ public class LoginScreen extends BaseScreen{
     MobileElement passwordEditText;
     @AndroidFindBy(xpath = "//*[@resource-id ='com.example.svetlana.scheduler:id/login_btn']")
     MobileElement loginButton;
+    @AndroidFindBy(xpath = "//*[@resource-id='android:id/message']")
+    MobileElement errorMessage;
 
     public LoginScreen fillEmail(String email){
         type(emailEditText, email);
@@ -49,5 +51,9 @@ public class LoginScreen extends BaseScreen{
         hideKeyboard();
         loginButton.click();
         return new WizardScreen(driver);
+    }
+
+    public String errorMessage(){
+        return errorMessage.getText();
     }
 }

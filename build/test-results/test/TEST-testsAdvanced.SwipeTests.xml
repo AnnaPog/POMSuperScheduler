@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testsAdvanced.SwipeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-16T17:50:06" hostname="MacBook-Pro-Anna.local" time="4.872">
+  <properties/>
+  <testcase name="test" classname="testsAdvanced.SwipeTests" time="4.872"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[июн. 16, 2021 8:50:06 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

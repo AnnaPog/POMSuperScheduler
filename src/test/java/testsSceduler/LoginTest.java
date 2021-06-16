@@ -1,4 +1,4 @@
-package tests;
+package testsSceduler;
 
 import config.ConfigBase;
 import dto.Credentials;
@@ -37,14 +37,16 @@ public class LoginTest extends ConfigBase {
 
     @Test
     public void negativeLogin(){
-        new SplashScreen(driver)
+        String error = new SplashScreen(driver)
                 .checkVetsion("0.0.3")
-                .complitLogin(Credentials.builder()
+                .complitNeg(Credentials.builder()
                         .email("john@gmail.com")
-                        .password("Jj123456$")
-                        .build());
+                        .password("Jj12345$")
+                        .build())
+                .errorMessage();
+        Assert.assertEquals(error, "Wrong email or password");
                    // driver.switchTo().alert().accept();
 
-
     }
+
 }

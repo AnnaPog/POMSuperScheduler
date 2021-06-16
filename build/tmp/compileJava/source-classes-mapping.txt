@@ -1,0 +1,32 @@
+screenObjects/BaseScreen.java
+ screenObjects.BaseScreen
+screenObjects/HomeScreen.java
+ screenObjects.HomeScreen
+screenObjects/WizardScreen.java
+ screenObjects.WizardScreen
+config/ConfigBase.java
+ config.ConfigBase
+screenObjects/EditCreateEventScreen.java
+ screenObjects.EditCreateEventScreen
+dto/Credentials.java
+ dto.Credentials
+ dto.Credentials$CredentialsBuilder
+dto/Event.java
+ dto.Event
+ dto.Event$EventBuilder
+config/AppiumListener.java
+ config.AppiumListener
+screenObjects/SplashScreen.java
+ screenObjects.SplashScreen
+screenObjects/LoginScreen.java
+ screenObjects.LoginScreen
+config/ConfigAdvancedPages.java
+ config.ConfigAdvancedPages
+advancedObjects/BaseScreenADV.java
+ advancedObjects.BaseScreenADV
+advancedObjects/SwipeScreen.java
+ advancedObjects.SwipeScreen
+advancedObjects/DragScreen.java
+ advancedObjects.DragScreen
+advancedObjects/SwipeableBasic.java
+ advancedObjects.SwipeableBasic

@@ -1,4 +1,4 @@
-package tests;
+package testsSceduler;
 
 import config.ConfigBase;
 import dto.Credentials;
