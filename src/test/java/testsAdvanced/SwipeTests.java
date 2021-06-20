@@ -21,6 +21,10 @@ public class SwipeTests extends ConfigAdvancedPages {
 
     @Test
     public void verticalSwipe(){
-        
+        new DragScreen(driver)
+                .goToSwipe()
+                .goToSwipeVertical()
+                .swipeUpToDown();
+
     }
 }

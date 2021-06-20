@@ -11,9 +11,16 @@ public class SwipeScreen extends BaseScreenADV{
     }
     @FindBy(how = How.XPATH, using = "//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][2]")
     MobileElement swipeBasic;
+    @FindBy(how = How.XPATH, using = "//*[@resource-id='com.h6ah4i.android.example.advrecyclerview:id/button'][5]")
+    MobileElement swipeVertical;
 
     public SwipeableBasic goToSwipeBasic(){
         swipeBasic.click();
+        return new SwipeableBasic(driver);
+    }
+
+    public SwipeableBasic goToSwipeVertical(){
+        swipeVertical.click();
         return new SwipeableBasic(driver);
     }
 }

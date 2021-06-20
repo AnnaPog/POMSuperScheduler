@@ -17,6 +17,22 @@ public class SwipeableBasic extends BaseScreenADV{
     @FindBy(id = "com.h6ah4i.android.example.advrecyclerview:id/container")
     List<MobileElement> list;
 
+    public SwipeableBasic swipeUpToDown(){
+        MobileElement el = list.get(2);
+        Rectangle rect = el.getRect();
+
+        int yfrom = rect.getY()+80;
+        int x = rect.getX()+rect.getWidth()/2;
+        int yto = rect.getY()+ rect.getHeight()-20;
+
+        TouchAction<?> touchAction = new TouchAction<>(driver);
+        touchAction.longPress(PointOption.point(yfrom, x))
+                .moveTo(PointOption.point(yto, x))
+                .release().perform();
+
+        return this;
+    }
+
     public SwipeableBasic swipeLeftToRight(){
         MobileElement el =list.get(0);
 
