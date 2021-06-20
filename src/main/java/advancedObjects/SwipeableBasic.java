@@ -17,7 +17,7 @@ public class SwipeableBasic extends BaseScreenADV{
     @FindBy(id = "com.h6ah4i.android.example.advrecyclerview:id/container")
     List<MobileElement> list;
 
-    public SwipeableBasic swipeUpToDown(){
+    public SwipeableBasic swipeDownToUp(){
         MobileElement el = list.get(2);
         Rectangle rect = el.getRect();
 
